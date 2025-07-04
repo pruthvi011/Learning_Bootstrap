@@ -15,6 +15,15 @@
       color: white; 
       text-shadow: 1px 1px 4px rgba(0,0,0,0.6); 
     } */
+
+    body{
+        background-color: pink;
+    }
+
+    footer a:hover {
+    text-decoration: underline;
+    color: #ffc107; /* Bootstrap warning/yellow */
+    }
     </style>
 </head>
 <body>
@@ -25,7 +34,7 @@
     <header>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg border border-top-0 border-2 border-warning-subtle">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
             <img width="40" height="40" class="img-fluid d-inline-block align-text-center" src="images/Logo.avif" alt="Logo">
@@ -39,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -62,10 +71,14 @@
         </nav>
 
     </header>
+    </section>
 
+    <br><br><hr><br>
+
+    <section class="mt-5 mb-5">
     <main>
 
-        <div class="about-section mt-5">
+        <div class="about-section">
 
             <div class="row ">
 
@@ -129,12 +142,33 @@
             </div>
         </div>
 
-        
-            
 
     </main>
-
     </section>
+
+    
+    <br>
+    <hr class="mt-2 mb-5">
+
+    <!-- Footer Start -->
+    <section>
+
+        <footer class=" pt-4 pb-3 mt-5 border border-top-0 border-2 border-warning-subtle">
+        <div class="container text-center">
+            <h5 class="mb-3">Ice Cream Café</h5>
+            <p>Serving joy in every scoop! Visit us for handcrafted flavors and a cozy café experience.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="#" class="text-black text-decoration-none">Home</a>
+            <a href="about.html" class="text-black text-decoration-none">About</a>
+            <a href="contact.html" class="text-black text-decoration-none">Contact</a>
+            </div>
+            <hr class="bg-light mt-4 mb-2">
+            <p class="mb-0">&copy; 2025 Ice Cream Café. All rights reserved.</p>
+        </div>
+        </footer>
+        
+    </section>
+    <!-- Footer End -->
 
     </div>
 
